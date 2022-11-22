@@ -7,10 +7,10 @@ function clickedHandler(){
 }
 // clickButton.addEventListener('click', clickedHandler, {once:true});
 
-// function buttonDarkTheme(e){
-//     clickButton.classList.add('click-meDarktheme')
-// };
-// clickButton.addEventListener('click', buttonDarkTheme);
+function buttonDarkTheme(e){
+    clickButton.classList.toggle('click-meDarktheme')
+};
+clickButton.addEventListener('click', buttonDarkTheme);
 // const textcontent = "Clicked!" 
 function changeBGpink(){
     document.body.classList.toggle("pink")
@@ -30,7 +30,14 @@ clickButton.addEventListener("click",changeBGpink);
 clickButton.addEventListener("click",changeText);
 
 
-// const image = document.querySelector('#shoppingCart')
-// function Addimage(e){
-    
-// }
+const image = document.querySelector('#shoppingCart')
+
+function UpdateImage(e){
+    image.setAttribute('src','Images/263142.png');
+    image.setAttribute('alt','Shopping Cart Image');
+    image.setAttribute('width','200');
+    image.setAttribute('height','200')
+}
+
+clickButton.addEventListener("click",UpdateImage);
+
