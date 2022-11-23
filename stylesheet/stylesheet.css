@@ -1,0 +1,22 @@
+.click-me{
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: orange;
+    color: black;
+}
+.click-meDarktheme{
+    background-color: black;
+    color: aliceblue;
+
+}
+/* .pink{
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    color: black;
+    background-color: pink;
+} */
+.pink{
+    background-color: pink;
+}
